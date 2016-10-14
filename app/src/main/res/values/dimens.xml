@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Dimensiones de prueba mías-->
+    <dimen name="Titulo">30dp</dimen>
+    <dimen name="appbarlayout_height">3dp</dimen>
+
+</resources>

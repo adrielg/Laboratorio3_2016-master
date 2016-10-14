@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Acciones"
+        android:title="Acciones"
+        android:orderInCategory="1" />
+    <item
+        android:id="@+id/Postular"
+        android:title="Postularse a esta Oferta"
+        android:orderInCategory="1" />
+    <item
+        android:id="@+id/Compartir"
+        android:title="Compartir esta Oferta"
+        android:orderInCategory="1" />
+
+</menu>

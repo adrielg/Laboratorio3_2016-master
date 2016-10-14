@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WorkFromHome</string>
+    <string name="menu_opcion1">Crear una Oferta</string>
+    <string name="menu_opcion2">Ver mis Ofertas</string>
+    <string name="menu_opcion3">Configuración</string>
+    <string name="menu_opcion4">Salir</string>
+
+    <string name="categoría1">"Arquitecto"</string>
+    <string name="categoría2">"Desarrollador"</string>
+    <string name="categoría3">"Tester"</string>
+    <string name="categoría4">"Analista"</string>
+    <string name="categoría5">"Mobile Developer"</string>
+    <string name="categoría6">"Otra..."</string>
+
+    <string name="warningDesc">Ingrese DESCRIPCIÓN de la Oferta</string>
+    <string name="warningHoras">Ingrese las HORAS de TRABAJO</string>
+    <string name="warningPrecio">Ingrese PRECIO máx por HORA</string>
+    <string name="warningMoneda">Seleccione MONEDA de Pago</string>
+    <string name="warningFin">Ingrese FECHA de FINALIZACIÓN válida</string>
+    <string name="warningConfirmar">¿Confirma dar ALTA?:</string>
+
+</resources>
