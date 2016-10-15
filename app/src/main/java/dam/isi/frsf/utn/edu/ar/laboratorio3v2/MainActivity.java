@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         listVw.setDividerHeight(3);
 
         //Registramos que el listView de Ofertas Laborales, tendrá asociado un Menú Contextual
-        //registerForContextMenu(listVw);
+        registerForContextMenu(listVw);
 
      }
 
@@ -91,10 +91,11 @@ public class MainActivity extends AppCompatActivity {
                  // do whatever
                  return true;
             case R.id.idMenu3:
-                // do whatever
+                Toast.makeText(this, "Opción Configurar: en Mantenimieto!", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.idMenu4:
-                // do whatever
+                // Cerramos app
+                finish();
                 return true;
             default:
                  return super.onOptionsItemSelected(item);
@@ -105,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo){
 
         super.onCreateContextMenu(menu,v,menuInfo);
+        menu.setHeaderTitle("Elija el color de fondo:");
         getMenuInflater().inflate(R.menu.menu_contextual, menu);
 
     }
@@ -112,8 +114,15 @@ public class MainActivity extends AppCompatActivity {
     /*---------------------------- On Context Item Selected --------------------------------------*/
     public boolean onContextItemSelected(MenuItem item) {
 
-        Toast.makeText(getBaseContext(), "Clickee en el Menú Contextual", Toast.LENGTH_LONG).show();
-        return false;
+        switch (item.getItemId()){
+            case R.id.Postular:
+                Toast.makeText(getBaseContext(), "Se registro la postulación con Exito.", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.Compartir:
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
     }
 
     /*-------------------------------- On Activity Result ----------------------------------------*/

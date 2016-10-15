@@ -238,7 +238,7 @@ public class NuevaOfLaboral extends AppCompatActivity implements Serializable {
                     bFecha = true;
                     df_fin = new SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault());
                     try {
-                        fin = (Date) df_fin.parse(stringFin);
+                        fin = df_fin.parse(stringFin);
                     } catch (Exception e) {
                         Log.e("formattedDateFromString", "Exception in formateDateFromstring(): " + e.getMessage());
                     }
