@@ -107,7 +107,9 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreateContextMenu(menu,v,menuInfo);
         menu.setHeaderTitle("Acciones:");
-        getMenuInflater().inflate(R.menu.menu_contextual, menu);
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_contextual, menu);
 
     }
 
@@ -116,9 +118,10 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()){
             case R.id.Postular:
-                Toast.makeText(getBaseContext(), "Se registro la postulación con Exito.", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Se registro la postulación con Exito.", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.Compartir:
+                Toast.makeText(this, "Se Compartio el Item.", Toast.LENGTH_LONG).show();
                 return true;
             default:
                 return super.onContextItemSelected(item);

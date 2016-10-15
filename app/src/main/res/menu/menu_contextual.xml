@@ -5,14 +5,21 @@
     <item
         android:id="@+id/Acciones"
         android:title="Acciones"
-        android:orderInCategory="1" />
+        android:visible="true" />
     <item
         android:id="@+id/Postular"
         android:title="Postularse a esta Oferta"
+        android:checkable="false"
+        android:enabled="true"
+        android:visible="true"
         android:orderInCategory="1" />
     <item
         android:id="@+id/Compartir"
         android:title="Compartir esta Oferta"
-        android:orderInCategory="1" />
+        android:visible="true"
+        android:checkable="false"
+        android:checked="false"
+        android:orderInCategory="2"
+        android:enabled="true" />
 
 </menu>
