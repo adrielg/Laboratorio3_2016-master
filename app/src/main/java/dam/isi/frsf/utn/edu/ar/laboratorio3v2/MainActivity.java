@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo){
 
         super.onCreateContextMenu(menu,v,menuInfo);
-        menu.setHeaderTitle("Elija el color de fondo:");
+        menu.setHeaderTitle("Acciones:");
         getMenuInflater().inflate(R.menu.menu_contextual, menu);
 
     }
